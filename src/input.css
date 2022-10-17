@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply text-2xl line-through font-extrabold
+    hover:text-blue-800;
+    color: orange;
+}
