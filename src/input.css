@@ -5,5 +5,5 @@
 h1 {
     @apply text-2xl line-through font-extrabold
     hover:text-blue-800;
-    color: orange;
+    color: blue;
 }
