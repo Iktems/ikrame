@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+        <title>TailwindCSS - Border Collapse</title>
+    </head>
+    <body>
+
+
+        <header class="menu">
+
+            <nav class="p-3 bg-gray-800 border-b-2 outline-pink-800 shadow-lg
+                shadow-gray-200/50
+                border-gray-700">
+                <div class="container flex flex-wrap justify-around
+                    items-center mx-auto">
+                    <a href="index.html" class="flex items-center">
+                        <span class="self-center text-2xl font-medium
+                            whitespace-nowrap text-white">Tailwindcss :
+                            les
+                            tables</span>
+                    </a>
+                    <button data-collapse-toggle="navbar-solid-bg" type="button"
+                        class="inline-flex justify-center items-center ml-3
+                        rounded-lg md:hidden
+                        focus:outline-none focus:ring-2 focus:ring-blue-300
+                        text-gray-400 hover:text-white
+                        dark:focus:ring-gray-500"
+                        aria-controls="navbar-solid-bg" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true"
+                            fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"><path
+                                fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0
+                                110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0
+                                110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0
+                                110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto"
+                        id="navbar-solid-bg">
+                        <ul class="flex flex-col mt-4 rounded-lg
+                            md:flex-row md:space-x-8 md:mt-0 md:text-sm
+                            md:font-medium md:border-0 md:bg-transparent
+                            dark:bg-gray-800 md:dark:bg-transparent
+                            dark:border-gray-700">
+                            <li>
+                                <a href="display.html" class="block py-2 pr-4
+                                    pl-3
+                                    text-white rounded hover:bg-gray-100
+                                    md:hover:bg-transparent md:border-0
+                                    md:hover:text-blue-700 md:p-0 text-lg
+                                    dark:text-gray-400 md:dark:hover:text-white
+                                    dark:hover:bg-gray-700 dark:hover:text-white
+                                    md:dark:hover:bg-transparent">Display</a>
+                            </li>
+                            <li>
+                                <a href="border-collapse.html" class="block py-2
+                                    pr-4 pl-3
+                                    text-white bg-blue-700 rounded text-lg
+                                    md:bg-transparent md:text-blue-700 md:p-0
+                                    dark:text-white" aria-current="page">Border
+                                    collapse</a>
+                            </li>
+                            <li>
+                                <a href="border-spacing.html" class="block py-2
+                                    pr-4 pl-3
+                                    text-white rounded hover:bg-gray-100
+                                    md:hover:bg-transparent md:border-0
+                                    md:hover:text-blue-700 md:p-0 text-lg
+                                    dark:text-gray-400 md:dark:hover:text-white
+                                    dark:hover:bg-gray-700 dark:hover:text-white
+                                    md:dark:hover:bg-transparent">Border spacing</a>
+                            </li>
+                            <li>
+                                <a href="table-layout.html" class="block py-2
+                                    pr-4 pl-3 text-lg
+                                    text-white rounded hover:bg-gray-100
+                                    md:hover:bg-transparent md:border-0
+                                    md:hover:text-blue-700 md:p-0
+                                    dark:text-gray-400 md:dark:hover:text-white
+                                    dark:hover:bg-gray-700 dark:hover:text-white
+                                    md:dark:hover:bg-transparent">Table layout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <main class="bc">
+            <div class="container pt-20 ">
+                <h2 class="text-gray-300 text-2xl">border-collapse</h2>
+                <div class="row flex justify-between shadow-lg
+                    shadow-gray-200/50">
+                    <div class="w-6/12 p-10 border-collapse">
+                        <table class="border-collapse">
+                            <thead>
+                                <tr>
+                                    <th class=" bg-slate-700 font-medium border
+                                        w-60 border-b-2 outline-pink-800
+                                        border-blue-500 h-12 text-white">State</th>
+                                    <th class="bg-slate-700 font-medium border
+                                        w-7/12 border-b-2 outline-pink-800
+                                        border-blue-500 h-12 text-white">City</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border text-center border-b-2
+                                        outline-pink-800 border-blue-500
+                                        text-slate-400 h-10">Indiana</td>
+                                    <td class="border text-center border-b-2
+                                        outline-pink-800 border-blue-500
+                                        text-slate-400 h-10">Indianapolis</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center border-b-2
+                                        outline-pink-800 border-blue-500
+                                        text-slate-400 h-10">Ohio</td>
+                                    <td class="border text-center border-b-2
+                                        outline-pink-800 border-blue-500
+                                        text-slate-400 h-10">Columbus</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center border-b-2
+                                        outline-pink-800 border-blue-500
+                                        text-slate-400 h-10">Michigan</td>
+                                    <td class="border text-center border-b-2
+                                        outline-pink-800 border-blue-500
+                                        text-slate-400 h-10">Detroit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="w-6/12 p-10">
+                        <h1 class="text-white text-lg ">HTML</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <<code class="font-bold">table class="border-collapse"></code><br>
+                        </p>
+                        <h1 class="text-white text-lg ">CSS</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <code class="font-bold">.border-collapse {
+                                border-collapse: collapse;
+                            }</code><br>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+                    <div class="container pt-20 pb-20">
+                        <h2 class="text-gray-300 text-2xl">border-separate</h2>
+                        <div class="row flex justify-between shadow-lg
+                            shadow-gray-200/50">
+                            <div class="w-6/12 p-10 ">
+                                <table class="border-separate ">
+                                    <thead>
+                                        <tr>
+                                            <th class=" bg-slate-700 font-medium
+                                                border w-60 border-b-2
+                                                outline-pink-800 border-blue-500
+                                                h-12 text-white">State</th>
+                                            <th class="bg-slate-700 font-medium
+                                                border w-7/12 border-b-2
+                                                outline-pink-800 border-blue-500
+                                                h-12 text-white">City</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="border text-center
+                                                border-b-2 outline-pink-800
+                                                border-blue-500 text-slate-400
+                                                h-10">Indiana</td>
+                                            <td class="border text-center
+                                                border-b-2 outline-pink-800
+                                                border-blue-500 text-slate-400
+                                                h-10">Indianapolis</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border text-center
+                                                border-b-2 outline-pink-800
+                                                border-blue-500 text-slate-400
+                                                h-10">Ohio</td>
+                                            <td class="border text-center
+                                                border-b-2 outline-pink-800
+                                                border-blue-500 text-slate-400
+                                                h-10">Columbus</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border text-center
+                                                border-b-2 outline-pink-800
+                                                border-blue-500 text-slate-400
+                                                h-10">Michigan</td>
+                                            <td class="border text-center
+                                                border-b-2 outline-pink-800
+                                                border-blue-500 text-slate-400
+                                                h-10">Detroit</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="w-6/12 p-10">
+                                <h1 class="text-white text-lg ">HTML</h1>
+                                <p class="font-extralight text-slate-300 pb-10">
+                                    <<code class="font-bold">table class="border-separate"></code><br>
+                                </p>
+                                <h1 class="text-white text-lg ">CSS</h1>
+                                <p class="font-extralight text-slate-300 pb-10">
+                                    <code class="font-bold">.border-separate {
+                                        border-collapse: separate;
+                                    }</code><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </main>
+
+
+
+            <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+        </body>
+    </html>

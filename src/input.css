@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-    @apply text-2xl line-through font-extrabold
-    hover:text-blue-800;
-    color: blue;
+body {
+    @apply bg-gray-800;
+}
+
+.bc {
+    max-height: auto;
+    width: 80vw;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+
+ul.moi {
+    /* list-style: inside !important; */
+    padding-left: 15px;
 }

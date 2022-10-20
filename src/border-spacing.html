@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+        <title>TailwindCSS - Border spacing</title>
+    </head>
+    <body>
+
+
+        <header class="menu">
+
+            <nav class="p-3 bg-gray-800 border-b-2 outline-pink-800 shadow-lg
+                shadow-gray-200/50
+                border-gray-700">
+                <div class="container flex flex-wrap justify-around
+                    items-center mx-auto">
+                    <a href="index.html" class="flex items-center">
+                        <span class="self-center text-2xl font-medium
+                            whitespace-nowrap text-white">Tailwindcss :
+                            les
+                            tables</span>
+                    </a>
+                    <button data-collapse-toggle="navbar-solid-bg" type="button"
+                        class="inline-flex justify-center items-center ml-3
+                        rounded-lg md:hidden
+                        focus:outline-none focus:ring-2 focus:ring-blue-300
+                        text-gray-400 hover:text-white
+                        dark:focus:ring-gray-500"
+                        aria-controls="navbar-solid-bg" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true"
+                            fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"><path
+                                fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0
+                                110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0
+                                110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0
+                                110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto"
+                        id="navbar-solid-bg">
+                        <ul class="flex flex-col mt-4 rounded-lg
+                            md:flex-row md:space-x-8 md:mt-0 md:text-sm
+                            md:font-medium md:border-0 md:bg-transparent
+                            dark:bg-gray-800 md:dark:bg-transparent
+                            dark:border-gray-700">
+                            <li>
+                                <a href="display.html" class="block py-2 pr-4
+                                    pl-3
+                                    text-white rounded hover:bg-gray-100
+                                    md:hover:bg-transparent md:border-0
+                                    md:hover:text-blue-700 md:p-0 text-lg
+                                    dark:text-gray-400 md:dark:hover:text-white
+                                    dark:hover:bg-gray-700 dark:hover:text-white
+                                    md:dark:hover:bg-transparent">Display</a>
+                            </li>
+                            <li>
+                                <a href="border-collapse.html" class="block py-2
+                                    pr-4
+                                    pl-3
+                                    text-white rounded hover:bg-gray-100
+                                    md:hover:bg-transparent md:border-0
+                                    md:hover:text-blue-700 md:p-0 text-lg
+                                    dark:text-gray-400 md:dark:hover:text-white
+                                    dark:hover:bg-gray-700 dark:hover:text-white
+                                    md:dark:hover:bg-transparent">Border
+                                    collapse</a>
+                            </li>
+                            <li>
+                                <a href="border-spacing.html" class="block py-2
+                                    pr-4 pl-3
+                                    text-white bg-blue-700 rounded text-lg
+                                    md:bg-transparent md:text-blue-700 md:p-0
+                                    dark:text-white" aria-current="page">Border
+                                    spacing</a>
+                            </li>
+                            <li>
+                                <a href="table-layout.html" class="block py-2
+                                    pr-4 pl-3 text-lg
+                                    text-white rounded hover:bg-gray-100
+                                    md:hover:bg-transparent md:border-0
+                                    md:hover:text-blue-700 md:p-0
+                                    dark:text-gray-400 md:dark:hover:text-white
+                                    dark:hover:bg-gray-700 dark:hover:text-white
+                                    md:dark:hover:bg-transparent">Table layout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+
+        <main class="bc">
+            <div class="container pt-20 pb-20">
+                <h2 class="text-gray-300 text-2xl">border-spacing</h2>
+                <p class="text-gray-400 text-sm">/!\ Le <span
+                        class="text-blue-500 ">border-spacing</span> ne peut
+                    être utilisé qu'avec le <a class="text-blue-500 "
+                        href="border-collapse.html">border-separate</a></p>
+                <div class="row flex justify-between shadow-lg
+                    shadow-gray-200/50">
+                    <div class="w-6/12 p-10 ">
+                        <h2 class="text-white text-lg pb-2">border-spacing-2</h2>
+                        <table class="border-separate border
+                            hover:border-spacing-2">
+                            <thead>
+                                <tr>
+                                    <th class=" bg-slate-700 font-medium
+                                        border w-60 border-b-2
+                                        outline-pink-800 border-blue-500
+                                        h-12 text-white">State</th>
+                                    <th class="bg-slate-700 font-medium
+                                        border w-7/12 border-b-2
+                                        outline-pink-800 border-blue-500
+                                        h-12 text-white">City</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Indiana</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Indianapolis</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Ohio</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Columbus</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Michigan</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Detroit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="w-6/12 pt-14 pl-10">
+                        <h1 class="text-white text-lg ">HTML</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <<code class="font-bold">table
+                                class="border-separate border
+                                hover:border-spacing-2"></code><br>
+                        </p>
+                        <h1 class="text-white text-lg ">CSS</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <code class="font-bold">.border-spacing-2:hover {<br>
+                                border-spacing: 0.5rem 0.5rem;<br>
+                                }</code><br>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="ml-10">
+                    <h1 class="text-gray-400 text-base mt-5 ">Les valeurs
+                        existantes :</h1>
+                    <div class="table-row">
+                        <div class="table-cell pr-10 text-sm text-gray-600">border-spacing-0<br>border-spacing-0.5<br>border-spacing-1<br>border-spacing-1.5<br>border-spacing-2<br>border-spacing-2.5<br>border-spacing-3
+                        </div>
+                        <div class="table-cell pr-10 text-gray-600 text-sm">border-spacing-3.5<br>border-spacing-4<br>border-spacing-5<br>border-spacing-6<br>border-spacing-7<br>border-spacing-8<br>border-spacing-9</div>
+                        <div class="table-cell text-gray-600 text-sm pr-10">border-spacing-10<br>border-spacing-11<br>border-spacing-12<br>border-spacing-14<br>border-spacing-16<br>border-spacing-20<br>border-spacing-24<br></div>
+                        <div class="table-cell text-gray-600 text-sm pr-10">border-spacing-28<br>border-spacing-32<br>border-spacing-36<br>border-spacing-40<br>border-spacing-44<br>border-spacing-48<br>border-spacing-52<br></div>
+                        <div class="table-cell text-gray-600 text-sm pr-10">border-spacing-56<br>border-spacing-60<br>border-spacing-64<br>border-spacing-72<br>border-spacing-80<br>border-spacing-96</div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row flex justify-between shadow-lg
+                    shadow-gray-200/50 mt-32">
+                    <div class="w-6/12 p-10 ">
+                        <h2 class="text-white text-lg pb-2">border-spacing-x-2</h2>
+                        <table class="border-separate border
+                            hover:border-spacing-x-2">
+                            <thead>
+                                <tr>
+                                    <th class=" bg-slate-700 font-medium
+                                        border w-60 border-b-2
+                                        outline-pink-800 border-blue-500
+                                        h-12 text-white">State</th>
+                                    <th class="bg-slate-700 font-medium
+                                        border w-7/12 border-b-2
+                                        outline-pink-800 border-blue-500
+                                        h-12 text-white">City</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Indiana</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Indianapolis</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Ohio</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Columbus</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Michigan</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Detroit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="w-6/12 pt-14 pl-10">
+                        <h1 class="text-white text-lg ">HTML</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <<code class="font-bold">table
+                                class="border-separate border
+                                hover:border-spacing-x-2"></code><br>
+                        </p>
+                        <h1 class="text-white text-lg ">CSS</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <code class="font-bold">.border-spacing-x-2:hover {<br>
+                                border-spacing-x: 0.5rem;<br>
+                                border-spacing-y: var(--tw-border-spacing-y);
+                                <br>}</code><br>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="ml-10 ">
+                    <h1 class="text-gray-400 text-base mt-5 ">Les valeurs
+                        existantes :</h1>
+                    <div class="table-row">
+                        <div class="table-cell pr-10 text-sm text-gray-600">border-spacing-x-0<br>border-spacing-x-0.5<br>border-spacing-x-1<br>border-spacing-x-1.5<br>border-spacing-x-2<br>border-spacing-x-2.5<br>border-spacing-x-3
+                        </div>
+                        <div class="table-cell pr-10 text-gray-600 text-sm">border-spacing-x-3.5<br>border-spacing-x-4<br>border-spacing-x-5<br>border-spacing-x-6<br>border-spacing-x-7<br>border-spacing-x-8<br>border-spacing-x-9</div>
+                        <div class="table-cell text-gray-600 text-sm pr-10">border-spacing-x-10<br>border-spacing-x-11<br>border-spacing-x-12<br>border-spacing-x-14<br>border-spacing-x-16<br>border-spacing-x-20<br>border-spacing-x-24<br></div>
+                        <div class="table-cell text-gray-600 text-sm pr-10">border-spacing-x-28<br>border-spacing-x-32<br>border-spacing-x-36<br>border-spacing-x-40<br>border-spacing-x-44<br>border-spacing-x-48<br>border-spacing-x-52<br></div>
+                        <div class="table-cell text-gray-600 text-sm pr-10">border-spacing-x-56<br>border-spacing-x-60<br>border-spacing-x-64<br>border-spacing-x-72<br>border-spacing-x-80<br>border-spacing-x-96</div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="row flex justify-between shadow-lg
+                    shadow-gray-200/50 mt-36">
+                    <div class="w-6/12 p-10">
+                        <h2 class="text-white text-lg pb-2">border-spacing-y-2</h2>
+                        <table class="border-separate border
+                            hover:border-spacing-y-2">
+                            <thead>
+                                <tr>
+                                    <th class=" bg-slate-700 font-medium
+                                        border w-60 border-b-2
+                                        outline-pink-800 border-blue-500
+                                        h-12 text-white">State</th>
+                                    <th class="bg-slate-700 font-medium
+                                        border w-7/12 border-b-2
+                                        outline-pink-800 border-blue-500
+                                        h-12 text-white">City</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Indiana</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Indianapolis</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Ohio</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Columbus</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Michigan</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Detroit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="w-6/12 pt-14 pl-10">
+                        <h1 class="text-white text-lg ">HTML</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <<code class="font-bold">table
+                                class="border-separate border
+                                hover:border-spacing-y-2"></code><br>
+                        </p>
+                        <h1 class="text-white text-lg ">CSS</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <code class="font-bold">.border-spacing-y-2:hover {<br>
+                                border-spacing-x: var(--tw-border-spacing-x);<br>
+                                border-spacing-y: 0.5rem;
+                                <br>}</code><br>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="ml-10 ">
+                    <h1 class="text-gray-400 text-base mt-5 ">Les valeurs
+                        existantes :</h1>
+                    <div class="table-row">
+                        <div class="table-cell pr-10 text-gray-600 text-sm">border-spacing-y-0<br>border-spacing-y-0.5<br>border-spacing-y-1<br>border-spacing-y-1.5<br>border-spacing-y-2<br>border-spacing-y-2.5<br>border-spacing-y-3
+                        </div>
+                        <div class="table-cell pr-10 text-gray-600 text-sm">border-spacing-y-3.5<br>border-spacing-y-4<br>border-spacing-y-5<br>border-spacing-y-6<br>border-spacing-y-7<br>border-spacing-y-8<br>border-spacing-y-9</div>
+                        <div class="table-cell text-gray-600 text-sm pr-10">border-spacing-y-10<br>border-spacing-y-11<br>border-spacing-y-12<br>border-spacing-y-14<br>border-spacing-y-16<br>border-spacing-y-20<br>border-spacing-y-24<br></div>
+                        <div class="table-cell text-gray-600 text-sm pr-10">border-spacing-y-28<br>border-spacing-y-32<br>border-spacing-y-36<br>border-spacing-y-40<br>border-spacing-y-44<br>border-spacing-y-48<br>border-spacing-y-52<br></div>
+                        <div class="table-cell text-gray-600 text-sm pr-10">border-spacing-y-56<br>border-spacing-y-60<br>border-spacing-y-64<br>border-spacing-y-72<br>border-spacing-y-80<br>border-spacing-y-96</div>
+                    </div>
+                </div>
+
+
+
+                <div class="row flex justify-between shadow-lg
+                    shadow-gray-200/50 mt-36">
+                    <div class="w-6/12 p-10 ">
+                        <h2 class="text-white text-lg pb-2">border-spacing-[2px]</h2>
+                        <table class="border-separate border border-spacing-2
+                            hover:border-spacing-[2px]">
+                            <thead>
+                                <tr>
+                                    <th class=" bg-slate-700 font-medium
+                                        border w-60 border-b-2
+                                        outline-pink-800 border-blue-500
+                                        h-12 text-white">State</th>
+                                    <th class="bg-slate-700 font-medium
+                                        border w-7/12 border-b-2
+                                        outline-pink-800 border-blue-500
+                                        h-12 text-white">City</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Indiana</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Indianapolis</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Ohio</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Columbus</td>
+                                </tr>
+                                <tr>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Michigan</td>
+                                    <td class="border text-center
+                                        border-b-2 outline-pink-800
+                                        border-blue-500 text-slate-400
+                                        h-10">Detroit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="w-6/12 pt-14 pl-10">
+                        <h1 class="text-white text-lg ">HTML</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <<code class="font-bold">table
+                                class="border-separate border border-spacing-2<br>
+                                hover:border-spacing-[2px]"></code><br>
+                        </p>
+                        <h1 class="text-white text-lg ">CSS</h1>
+                        <p class="font-extralight text-slate-300 pb-10">
+                            <code class="font-bold">.border-spacing-[2px]:hover
+                                {<br>
+                                border-spacing: 2px 2px;<br>
+                                }</code><br>
+                        </p>
+                    </div>
+
+                </div>
+                
+                </div>
+
+
+
+
+                <div class="row flex justify-between shadow-lg
+                shadow-gray-200/50 mt-20 mb-20">
+                <div class="w-6/12 p-10 ">
+                    <h2 class="text-white text-lg pb-2">border-spacing-x-[2px]</h2>
+                    <table class="border-separate border border-spacing-x-2
+                        hover:border-spacing-x-[2px]">
+                        <thead>
+                            <tr>
+                                <th class=" bg-slate-700 font-medium
+                                    border w-60 border-b-2
+                                    outline-pink-800 border-blue-500
+                                    h-12 text-white">State</th>
+                                <th class="bg-slate-700 font-medium
+                                    border w-7/12 border-b-2
+                                    outline-pink-800 border-blue-500
+                                    h-12 text-white">City</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border text-center
+                                    border-b-2 outline-pink-800
+                                    border-blue-500 text-slate-400
+                                    h-10">Indiana</td>
+                                <td class="border text-center
+                                    border-b-2 outline-pink-800
+                                    border-blue-500 text-slate-400
+                                    h-10">Indianapolis</td>
+                            </tr>
+                            <tr>
+                                <td class="border text-center
+                                    border-b-2 outline-pink-800
+                                    border-blue-500 text-slate-400
+                                    h-10">Ohio</td>
+                                <td class="border text-center
+                                    border-b-2 outline-pink-800
+                                    border-blue-500 text-slate-400
+                                    h-10">Columbus</td>
+                            </tr>
+                            <tr>
+                                <td class="border text-center
+                                    border-b-2 outline-pink-800
+                                    border-blue-500 text-slate-400
+                                    h-10">Michigan</td>
+                                <td class="border text-center
+                                    border-b-2 outline-pink-800
+                                    border-blue-500 text-slate-400
+                                    h-10">Detroit</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="w-6/12 pt-14 pl-10">
+                    <h1 class="text-white text-lg ">HTML</h1>
+                    <p class="font-extralight text-slate-300 pb-10">
+                        <<code class="font-bold">table
+                            class="border-separate border border-spacing-x-2<br>
+                            hover:border-spacing-x-[2px]"></code><br>
+                    </p>
+                    <h1 class="text-white text-lg ">CSS</h1>
+                    <p class="font-extralight text-slate-300 pb-10">
+                        <code class="font-bold">.border-spacing-x-[2px]:hover {<br>
+                            border-spacing-x: 2px;<br>
+                            border-spacing-y: var(--tw-border-spacing-y);
+                            <br>}</code><br>
+                    </p>
+                </div>
+
+            </div>
+            
+            </div>
+
+
+
+
+            <div class="row flex justify-between shadow-lg
+            shadow-gray-200/50 mt-40 mb-20">
+            <div class="w-6/12 p-10 ">
+                <h2 class="text-white text-lg pb-2">border-spacing-y-[2px]</h2>
+                <table class="border-separate border border-spacing-y-2
+                    hover:border-spacing-y-[2px]">
+                    <thead>
+                        <tr>
+                            <th class=" bg-slate-700 font-medium
+                                border w-60 border-b-2
+                                outline-pink-800 border-blue-500
+                                h-12 text-white">State</th>
+                            <th class="bg-slate-700 font-medium
+                                border w-7/12 border-b-2
+                                outline-pink-800 border-blue-500
+                                h-12 text-white">City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border text-center
+                                border-b-2 outline-pink-800
+                                border-blue-500 text-slate-400
+                                h-10">Indiana</td>
+                            <td class="border text-center
+                                border-b-2 outline-pink-800
+                                border-blue-500 text-slate-400
+                                h-10">Indianapolis</td>
+                        </tr>
+                        <tr>
+                            <td class="border text-center
+                                border-b-2 outline-pink-800
+                                border-blue-500 text-slate-400
+                                h-10">Ohio</td>
+                            <td class="border text-center
+                                border-b-2 outline-pink-800
+                                border-blue-500 text-slate-400
+                                h-10">Columbus</td>
+                        </tr>
+                        <tr>
+                            <td class="border text-center
+                                border-b-2 outline-pink-800
+                                border-blue-500 text-slate-400
+                                h-10">Michigan</td>
+                            <td class="border text-center
+                                border-b-2 outline-pink-800
+                                border-blue-500 text-slate-400
+                                h-10">Detroit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="w-6/12 pt-14 pl-10">
+                <h1 class="text-white text-lg ">HTML</h1>
+                <p class="font-extralight text-slate-300 pb-10">
+                    <<code class="font-bold">table
+                        class="border-separate border border-spacing-y-2<br>
+                        hover:border-spacing-y-[2px]"></code><br>
+                </p>
+                <h1 class="text-white text-lg ">CSS</h1>
+                <p class="font-extralight text-slate-300 pb-10">
+                    <code class="font-bold">.border-spacing-y-[2px]:hover {<br>
+                        border-spacing-x: var(--tw-border-spacing-x);<br>
+                        border-spacing-y: 2px;
+                        <br>}</code><br>
+                </p>
+            </div>
+
+        </div>
+        
+        </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </main>
+
+
+
+        <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    </body>
+</html>
